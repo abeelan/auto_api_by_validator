@@ -1,0 +1,18 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:205 Starting new HTTP connection (1): qa.android.api.appeasou.com:8080
+DEBUG    urllib3.connectionpool:connectionpool.py:393 http://qa.android.api.appeasou.com:8080 "GET /api/bookapp/check_version.m?session_id=nETgxwiZUZsOQ-3QOOzJ-&lastclock=1531811414297&appverion=1079&cid=eef_easou_book&udid=07C57A612E7D6E78E8A49A6E2D6E207F&os=android&ch=nice&version=002&dzh=1&scp=0&appid=10001&utype=0&rtype=1&ptype=4&instime=1551949316154&pushid=140fe1da9e8f9d2d76c&birt=0&userinitpay=103&gender=2&usernewmedia=0 HTTP/1.1" 200 None
+INFO     root:request.py:37 ----------------------------------------------------------------------------------------------------
+INFO     root:request.py:38 [ api name    ] : check_version.m
+INFO     root:request.py:39 [ request url ] : http://qa.android.api.appeasou.com:8080/api/bookapp/check_version.m?session_id=nETgxwiZUZsOQ-3QOOzJ-&lastclock=1531811414297&appverion=1079&cid=eef_easou_book&udid=07C57A612E7D6E78E8A49A6E2D6E207F&os=android&ch=nice&version=002&dzh=1&scp=0&appid=10001&utype=0&rtype=1&ptype=4&instime=1551949316154&pushid=140fe1da9e8f9d2d76c&birt=0&userinitpay=103&gender=2&usernewmedia=0
+INFO     root:request.py:40 [ method      ] : GET
+INFO     root:request.py:41 [ status code ] : 200
+INFO     root:request.py:42 [ time total  ] : 0.070282 s
+INFO     root:request.py:45 [ response json ] : {'success': False, 'errorlog': '版本无更新。'}
+INFO     root:request.py:48 ----------------------------------------------------------------------------------------------------
+INFO     root:validate.py:129 AssertCode, actual[200] == expect[200]
+INFO     root:validate.py:22 validator is existing...
+INFO     root:validate.py:44 Running validator >>>
+INFO     root:validate.py:58 --> errorlog
+INFO     root:comparators.py:30 PASS, RegexMatch, actual[版本无更新。], pattern [版本.*。$]
+INFO     root:validate.py:58 --> success
+INFO     root:comparators.py:30 PASS, actual[False] is False.
+INFO     root:validate.py:46 Run finished <<<

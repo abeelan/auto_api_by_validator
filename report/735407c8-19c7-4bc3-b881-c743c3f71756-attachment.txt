@@ -1,0 +1,1 @@
+http://qa.android.api.appeasou.com:8080/api/bookapp/check_version.m?session_id=nETgxwiZUZsOQ-3QOOzJ-&lastclock=1531811414297&appverion=1079&cid=eef_easou_book&udid=07C57A612E7D6E78E8A49A6E2D6E207F&os=android&ch=nice&version=002&dzh=1&scp=0&appid=10001&utype=0&rtype=1&ptype=4&instime=1551949316154&pushid=140fe1da9e8f9d2d76c&birt=0&userinitpay=103&gender=2&usernewmedia=0

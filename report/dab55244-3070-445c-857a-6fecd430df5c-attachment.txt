@@ -1,0 +1,18 @@
+[DEBUG - 2020-07-02 18:58:53,408 - connectionpool.py] : Starting new HTTP connection (1): qa.android.api.appeasou.com:8080
+[DEBUG - 2020-07-02 18:58:53,477 - connectionpool.py] : http://qa.android.api.appeasou.com:8080 "GET /api/bookapp/check_version.m?session_id=nETgxwiZUZsOQ-3QOOzJ-&lastclock=1531811414297&appverion=1079&cid=eef_easou_book&udid=07C57A612E7D6E78E8A49A6E2D6E207F&os=android&ch=nice&version=002&dzh=1&scp=0&appid=10001&utype=0&rtype=1&ptype=4&instime=1551949316154&pushid=140fe1da9e8f9d2d76c&birt=0&userinitpay=103&gender=2&usernewmedia=0 HTTP/1.1" 200 None
+[INFO - 2020-07-02 18:58:53,478 - request.py] : ----------------------------------------------------------------------------------------------------
+[INFO - 2020-07-02 18:58:53,478 - request.py] : [ api name    ] : check_version.m
+[INFO - 2020-07-02 18:58:53,478 - request.py] : [ request url ] : http://qa.android.api.appeasou.com:8080/api/bookapp/check_version.m?session_id=nETgxwiZUZsOQ-3QOOzJ-&lastclock=1531811414297&appverion=1079&cid=eef_easou_book&udid=07C57A612E7D6E78E8A49A6E2D6E207F&os=android&ch=nice&version=002&dzh=1&scp=0&appid=10001&utype=0&rtype=1&ptype=4&instime=1551949316154&pushid=140fe1da9e8f9d2d76c&birt=0&userinitpay=103&gender=2&usernewmedia=0
+[INFO - 2020-07-02 18:58:53,479 - request.py] : [ method      ] : GET
+[INFO - 2020-07-02 18:58:53,479 - request.py] : [ status code ] : 200
+[INFO - 2020-07-02 18:58:53,479 - request.py] : [ time total  ] : 0.070282 s
+[INFO - 2020-07-02 18:58:53,479 - request.py] : [ response json ] : {'success': False, 'errorlog': '版本无更新。'}
+[INFO - 2020-07-02 18:58:53,479 - request.py] : ----------------------------------------------------------------------------------------------------
+[INFO - 2020-07-02 18:58:53,480 - validate.py] : AssertCode, actual[200] == expect[200]
+[INFO - 2020-07-02 18:58:53,480 - validate.py] : validator is existing...
+[INFO - 2020-07-02 18:58:53,480 - validate.py] : Running validator >>>
+[INFO - 2020-07-02 18:58:53,481 - validate.py] : --> errorlog
+[INFO - 2020-07-02 18:58:53,481 - comparators.py] : PASS, RegexMatch, actual[版本无更新。], pattern [版本.*。$]
+[INFO - 2020-07-02 18:58:53,481 - validate.py] : --> success
+[INFO - 2020-07-02 18:58:53,481 - comparators.py] : PASS, actual[False] is False.
+[INFO - 2020-07-02 18:58:53,481 - validate.py] : Run finished <<<
