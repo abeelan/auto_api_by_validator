@@ -33,16 +33,16 @@ case_path = path.case_path()
 
 
 if __name__ == '__main__':
-    logger.Logging()
-    pytest.main(
-        [
-            # "-q",
-            # "-s",
-            case_path,
-            "--os=android",
-            "--app=easou",
-            "--env=test",
-            f"--alluredir={report_path}",
-        ]
-    )
+    # logger.Logging()
+    # pytest.main(
+    #     [
+    #         # "-q",
+    #         # "-s",
+    #         case_path,
+    #         "--os=android",
+    #         "--app=easou",
+    #         "--env=test",
+    #         f"--alluredir={report_path}",
+    #     ]
+    # )
     shell.Shell().invoke("allure serve %s" % path.report_path())
