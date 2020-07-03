@@ -43,7 +43,7 @@ def pytest_addoption(parser):
         "--app", action="store", default="easou", help="app : easou or kuaidu"
     )
     parser.addoption(
-        "--env", action="store", default="test", help="env : test or online"
+        "--env", action="store", default="online", help="env : test or online"
     )
 
 

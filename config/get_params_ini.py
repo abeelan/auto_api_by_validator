@@ -24,16 +24,16 @@ class GetParamsIni:
         return {k: v for k, v in self.config.get_section_items("spec_params")}
 
     @staticmethod
-    def get_host(_os="android", _app="easou", _env="test"):
+    def get_host(_os="android", _app="easou", _env="online"):
         """获取 api 和 webview 的域名
         """
-        if _os in ["android", "ios"] and _app in ["easou", "kuaidu"] and _env in ["test", "online"]:
+        if _os in ["android", "ios"] and _app in ["easou", ] and _env in ["test", "online"]:
             path = '{}/env.yml'.format(os.path.dirname(__file__))
             content = load_yaml(path)
 
             address = "api/bookapp/"
             api = content[_os][_app][_env]["api"]
-            webview = content[_os][_app][_env]["web"]
+            webview = "..."  # 在配置文件配置，此处根据环境获取
 
             if api and webview:
                 return api+address, webview
@@ -43,22 +43,11 @@ class GetParamsIni:
         else:
             log = """请输入正确的参数：
 _os    :  android | ios
-_app   :  easou   | other
+_app   :  easou   | kuaidu
 _env   :  test    | online
 """
             logging.error(log)
 
-    def get_account(self):
-        account_items = self.config.get_section_items("account")
-        account_dict = {}
-        for item in account_items:
-            account_dict[item[0]] = item[1]
-        return account_dict
-
-    def user_info(self, key):
-        return self.get_account()[key]
-
 
 if __name__ == '__main__':
-    # GetParamsIni().get_host(_env="ss")
-    print(GetParamsIni().user_info("username"))
+    pass
